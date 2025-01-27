@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 // Load global data
 global.foodData = null;
@@ -23,7 +23,7 @@ require("./db")((err, data, CatData) => {
 app.use(
   cors({
     origin: [
-      "http://localhost:3000",
+      "http://localhost:5000",
       "https://delivery-frontend-d7lv.onrender.com",
     ], // Adjust the origins as needed
     methods: ["GET", "POST", "PUT", "DELETE"],
