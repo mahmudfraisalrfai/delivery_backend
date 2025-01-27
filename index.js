@@ -22,7 +22,10 @@ require("./db")((err, data, CatData) => {
 // Middleware
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://your-frontend-domain.com"], // Adjust the origins as needed
+    origin: [
+      "http://localhost:3000",
+      "https://delivery-frontend-d7lv.onrender.com",
+    ], // Adjust the origins as needed
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
